@@ -24,7 +24,7 @@ public class DocumentManagementSystem {
         extensionToImporter.put("invoice", new InvoiceImporter());
     }
 
-    void importFile(final String path) throws IOException {
+    public void importFile(final String path) throws IOException {
         final File file = new File(path);
         if (!file.exists()) {
             throw new FileNotFoundException(path);
